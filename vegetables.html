@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Vegetables</title>
+</head>
+<style>
+    nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: 400px;
+    }
+
+    body::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    /*
+    body::-webkit-scrollbar-track {
+        background-color: rgb(202, 245, 189);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #188333;
+        border-radius: 5px;
+        border: 1px solid #c8ff00;
+    } */
+    .navbar-nav {
+        position: relative;
+        left: 22%;
+    }
+
+    @media screen and (max-width:992px) {
+        .cart-icon img {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        .carta a {
+            display: none;
+        }
+    }
+
+    .dropdown-item:hover {
+        background-color: rgb(230, 230, 230);
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .bd-placeholder-img {
+        height: 260px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: rgb(200, 245, 203);">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="/GreenBasket/">
+                <img src="gbpng.png" alt="" width="30" height="24" class="d-inline-block align-text-top ">
+            </a>
+            <a class="navbar-brand lead" style="font-size: 25px;" href="/GreenBasket/">Green Basket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/GreenBasket/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Plants.html">Decorative Plants</a></li>
+                            <li><a class="dropdown-item" href="Flower.html">Flowers</a></li>
+                            <li><a class="dropdown-item" href="vegetables.html">Vegetables</a></li>
+                            <li><a class="dropdown-item" href="Seeds.html">Seeds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item carta">
+                        <a class="nav-link" href="/GreenBasket/cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/GreenBasket/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/GreenBasket/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="cart-icon" href="/GreenBasket/cart.html" style="font-weight: bold;" role="button" aria-disabled="true"><img
+                        src="cart3.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <div class="album py-4 bg-light">
+        <div class="container">
+            <h2 style="text-align: center;">Vegetables</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1590165482129-1b8b27698780?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4>Potato</h4>
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary">₹85.00</button>
+                                    <a class="btn btn-outline-secondary" href="cart.html">ADD TO CART</a>
+                                </div>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1589581668820-d354a3dd5091?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dG9tYXRvfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4>Tomato</h4>
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary">₹40.00</button>
+                                    <a class="btn btn-outline-secondary" href="cart.html">ADD TO CART</a>
+                                </div>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1606355601253-61a57fe375e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fycm90fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4>Carrot</h4>
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary">₹28.00</button>
+                                    <a class="btn btn-outline-secondary" href="cart.html">ADD TO CART</a>
+                                </div>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1569976710208-b52636b52c09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHVtcGtpbnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=600&q=60"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4>Pumpkin</h4>
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary">₹35.00</button>
+                                    <a class="btn btn-outline-secondary" href="cart.html">ADD TO CART</a>
+                                </div>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1611318760962-6411a0cfb17e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcHBlcnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=600&q=60"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4>Pepper</h4>
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary">₹10.00/100gm</button>
+                                    <a class="btn btn-outline-secondary" href="cart.html">ADD TO CART</a>
+                                </div>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHZlZ2V0YWJsZXN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4>Spinach</h4>
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary">₹40.00</button>
+                                    <a class="btn btn-outline-secondary" href="cart.html">ADD TO CART</a>
+                                </div>
+                                <small class="text-muted">Updated</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <center>Copyright © www.GreenBasket.com. All rights reserved.</center>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
